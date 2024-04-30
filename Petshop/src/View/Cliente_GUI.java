@@ -78,7 +78,7 @@ public class Cliente_GUI extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         jPanel2.setBackground(new java.awt.Color(204, 255, 204));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Cadastro de Cliente", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14), new java.awt.Color(0, 0, 0))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Cadastro de Cliente", 0, 0, new java.awt.Font("Arial", 1, 14))); // NOI18N
         jPanel2.setPreferredSize(new java.awt.Dimension(900, 500));
         jPanel2.setLayout(null);
 
@@ -89,9 +89,8 @@ public class Cliente_GUI extends javax.swing.JFrame {
             }
         });
         jPanel2.add(Voltar);
-        Voltar.setBounds(400, 450, 77, 32);
+        Voltar.setBounds(400, 450, 77, 23);
 
-        nomeLabel.setForeground(new java.awt.Color(0, 0, 0));
         nomeLabel.setText("Nome");
         jPanel2.add(nomeLabel);
         nomeLabel.setBounds(240, 20, 60, 20);
@@ -103,16 +102,15 @@ public class Cliente_GUI extends javax.swing.JFrame {
             }
         });
         jPanel2.add(nomeTF);
-        nomeTF.setBounds(240, 40, 600, 24);
+        nomeTF.setBounds(240, 40, 600, 20);
 
-        cpfLabel.setForeground(new java.awt.Color(0, 0, 0));
         cpfLabel.setText("CPF");
         jPanel2.add(cpfLabel);
-        cpfLabel.setBounds(240, 70, 60, 16);
+        cpfLabel.setBounds(240, 70, 60, 14);
 
         cpfTF.setToolTipText("Digite o CPF do cliente");
         jPanel2.add(cpfTF);
-        cpfTF.setBounds(240, 90, 180, 24);
+        cpfTF.setBounds(240, 90, 180, 20);
 
         rgLabel.setForeground(new java.awt.Color(51, 51, 51));
         rgLabel.setText("RG");
@@ -126,12 +124,11 @@ public class Cliente_GUI extends javax.swing.JFrame {
             }
         });
         jPanel2.add(rgTF);
-        rgTF.setBounds(450, 90, 180, 24);
+        rgTF.setBounds(450, 90, 180, 20);
 
-        nascLabel.setForeground(new java.awt.Color(0, 0, 0));
         nascLabel.setText("Data de Nascimento");
         jPanel2.add(nascLabel);
-        nascLabel.setBounds(660, 70, 130, 16);
+        nascLabel.setBounds(660, 70, 130, 14);
 
         nascTF.setToolTipText("Digite a data de nascimento do cliente");
         nascTF.addActionListener(new java.awt.event.ActionListener() {
@@ -140,17 +137,15 @@ public class Cliente_GUI extends javax.swing.JFrame {
             }
         });
         jPanel2.add(nascTF);
-        nascTF.setBounds(660, 90, 180, 24);
+        nascTF.setBounds(660, 90, 180, 20);
 
-        contLabel.setForeground(new java.awt.Color(0, 0, 0));
         contLabel.setText("Contatos");
         jPanel2.add(contLabel);
-        contLabel.setBounds(240, 130, 90, 16);
+        contLabel.setBounds(240, 130, 90, 14);
 
-        celLabel.setForeground(new java.awt.Color(0, 0, 0));
         celLabel.setText("Celular");
         jPanel2.add(celLabel);
-        celLabel.setBounds(240, 160, 80, 16);
+        celLabel.setBounds(240, 160, 80, 14);
 
         celTF.setToolTipText("Digite o número do celular do cliente");
         celTF.addActionListener(new java.awt.event.ActionListener() {
@@ -159,129 +154,111 @@ public class Cliente_GUI extends javax.swing.JFrame {
             }
         });
         jPanel2.add(celTF);
-        celTF.setBounds(240, 180, 180, 24);
+        celTF.setBounds(240, 180, 180, 20);
 
-        resiLabel.setForeground(new java.awt.Color(0, 0, 0));
         resiLabel.setText("Residência");
         jPanel2.add(resiLabel);
-        resiLabel.setBounds(450, 160, 80, 16);
+        resiLabel.setBounds(450, 160, 80, 14);
 
         resiTF.setToolTipText("Digite o número residencial do cliente");
         jPanel2.add(resiTF);
-        resiTF.setBounds(450, 180, 180, 24);
+        resiTF.setBounds(450, 180, 180, 20);
 
-        mailLabel.setForeground(new java.awt.Color(0, 0, 0));
         mailLabel.setText("Email");
         jPanel2.add(mailLabel);
-        mailLabel.setBounds(660, 160, 80, 16);
+        mailLabel.setBounds(660, 160, 80, 14);
 
         mailTF.setToolTipText("Digite o email do cliente");
         jPanel2.add(mailTF);
-        mailTF.setBounds(660, 180, 180, 24);
+        mailTF.setBounds(660, 180, 180, 20);
 
         iconLabel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/person.png"))); // NOI18N
         jPanel2.add(iconLabel);
         iconLabel.setBounds(60, 40, 128, 150);
 
-        petsLabel.setForeground(new java.awt.Color(0, 0, 0));
         petsLabel.setText("Pets");
         jPanel2.add(petsLabel);
-        petsLabel.setBounds(70, 230, 50, 16);
+        petsLabel.setBounds(70, 230, 50, 14);
 
-        p1Label.setForeground(new java.awt.Color(0, 0, 0));
         p1Label.setText("Pet 1");
         jPanel2.add(p1Label);
-        p1Label.setBounds(70, 260, 70, 16);
+        p1Label.setBounds(70, 260, 70, 14);
 
-        pnomeLabel.setForeground(new java.awt.Color(0, 0, 0));
         pnomeLabel.setText("Nome");
         jPanel2.add(pnomeLabel);
-        pnomeLabel.setBounds(70, 290, 70, 16);
+        pnomeLabel.setBounds(70, 290, 70, 14);
         jPanel2.add(pnomeTF);
-        pnomeTF.setBounds(70, 320, 120, 24);
+        pnomeTF.setBounds(70, 320, 120, 20);
 
-        rLabel.setForeground(new java.awt.Color(0, 0, 0));
         rLabel.setText("Raça");
         jPanel2.add(rLabel);
-        rLabel.setBounds(70, 360, 70, 16);
+        rLabel.setBounds(70, 360, 70, 14);
         jPanel2.add(rTF);
-        rTF.setBounds(70, 390, 120, 24);
+        rTF.setBounds(70, 390, 120, 20);
 
-        p2Label.setForeground(new java.awt.Color(0, 0, 0));
         p2Label.setText("Pet 2");
         jPanel2.add(p2Label);
-        p2Label.setBounds(240, 260, 60, 16);
+        p2Label.setBounds(240, 260, 60, 14);
 
-        pnome2Label.setForeground(new java.awt.Color(0, 0, 0));
         pnome2Label.setText("Nome");
         jPanel2.add(pnome2Label);
-        pnome2Label.setBounds(240, 290, 80, 16);
+        pnome2Label.setBounds(240, 290, 80, 14);
         jPanel2.add(pnome2TF);
-        pnome2TF.setBounds(240, 320, 120, 24);
+        pnome2TF.setBounds(240, 320, 120, 20);
 
-        r2Label.setForeground(new java.awt.Color(0, 0, 0));
         r2Label.setText("Raça");
         jPanel2.add(r2Label);
-        r2Label.setBounds(240, 360, 70, 16);
+        r2Label.setBounds(240, 360, 70, 14);
         jPanel2.add(r2TF);
-        r2TF.setBounds(240, 390, 120, 24);
+        r2TF.setBounds(240, 390, 120, 20);
 
-        p3Label.setForeground(new java.awt.Color(0, 0, 0));
         p3Label.setText("Pet 3");
         jPanel2.add(p3Label);
-        p3Label.setBounds(410, 260, 70, 16);
+        p3Label.setBounds(410, 260, 70, 14);
 
-        pnome3Label.setForeground(new java.awt.Color(0, 0, 0));
         pnome3Label.setText("Nome");
         jPanel2.add(pnome3Label);
-        pnome3Label.setBounds(410, 290, 80, 16);
+        pnome3Label.setBounds(410, 290, 80, 14);
         jPanel2.add(pnome3TF);
-        pnome3TF.setBounds(410, 320, 120, 24);
+        pnome3TF.setBounds(410, 320, 120, 20);
 
-        r3Label.setForeground(new java.awt.Color(0, 0, 0));
         r3Label.setText("Raça");
         jPanel2.add(r3Label);
-        r3Label.setBounds(410, 360, 80, 16);
+        r3Label.setBounds(410, 360, 80, 14);
         jPanel2.add(r3TF);
-        r3TF.setBounds(410, 390, 120, 24);
+        r3TF.setBounds(410, 390, 120, 20);
 
-        p4Label.setForeground(new java.awt.Color(0, 0, 0));
         p4Label.setText("Pet 4");
         jPanel2.add(p4Label);
-        p4Label.setBounds(570, 260, 80, 16);
+        p4Label.setBounds(570, 260, 80, 14);
 
-        pnome4Label.setForeground(new java.awt.Color(0, 0, 0));
         pnome4Label.setText("Nome");
         jPanel2.add(pnome4Label);
-        pnome4Label.setBounds(570, 290, 80, 16);
+        pnome4Label.setBounds(570, 290, 80, 14);
         jPanel2.add(pnome4TF);
-        pnome4TF.setBounds(570, 320, 120, 24);
+        pnome4TF.setBounds(570, 320, 120, 20);
 
-        r4Label.setForeground(new java.awt.Color(0, 0, 0));
         r4Label.setText("Raça");
         jPanel2.add(r4Label);
-        r4Label.setBounds(570, 360, 90, 16);
+        r4Label.setBounds(570, 360, 90, 14);
         jPanel2.add(r4TF);
-        r4TF.setBounds(570, 390, 120, 24);
+        r4TF.setBounds(570, 390, 120, 20);
 
-        p5Label.setForeground(new java.awt.Color(0, 0, 0));
         p5Label.setText("Pet 5");
         jPanel2.add(p5Label);
-        p5Label.setBounds(720, 260, 80, 16);
+        p5Label.setBounds(720, 260, 80, 14);
 
-        pnome5Label.setForeground(new java.awt.Color(0, 0, 0));
         pnome5Label.setText("Nome");
         jPanel2.add(pnome5Label);
-        pnome5Label.setBounds(720, 290, 80, 16);
+        pnome5Label.setBounds(720, 290, 80, 14);
         jPanel2.add(pnome5TF);
-        pnome5TF.setBounds(720, 320, 120, 24);
+        pnome5TF.setBounds(720, 320, 120, 20);
 
-        r5Label.setForeground(new java.awt.Color(0, 0, 0));
         r5Label.setText("Raça");
         jPanel2.add(r5Label);
-        r5Label.setBounds(720, 360, 70, 16);
+        r5Label.setBounds(720, 360, 70, 14);
         jPanel2.add(r5TF);
-        r5TF.setBounds(720, 390, 120, 24);
+        r5TF.setBounds(720, 390, 120, 20);
 
         getContentPane().add(jPanel2);
         jPanel2.setBounds(0, 0, 900, 500);
