@@ -4,10 +4,12 @@ import javax.swing.JOptionPane;
 
 
 public class Início_GUI extends javax.swing.JFrame {
-
+    
+    
     
     public Início_GUI() {
         initComponents();
+        img1.setVisible(false);
     }
 
     
@@ -29,6 +31,7 @@ public class Início_GUI extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         mensagem_txt = new javax.swing.JLabel();
         sair_BTN = new javax.swing.JButton();
+        img1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -139,6 +142,10 @@ public class Início_GUI extends javax.swing.JFrame {
         calc_Panel.add(sair_BTN);
         sair_BTN.setBounds(330, 440, 130, 50);
 
+        img1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/img1.png"))); // NOI18N
+        calc_Panel.add(img1);
+        img1.setBounds(630, 170, 128, 128);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -157,6 +164,7 @@ public class Início_GUI extends javax.swing.JFrame {
     private void som_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_som_BTNActionPerformed
         
         Model.Operações_DAO.soma();
+        img1.setVisible(true);
         
     }//GEN-LAST:event_som_BTNActionPerformed
 
@@ -172,18 +180,21 @@ public class Início_GUI extends javax.swing.JFrame {
     private void sub_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sub_BTNActionPerformed
         
         Model.Operações_DAO.sub();
+        img1.setVisible(true);
         
     }//GEN-LAST:event_sub_BTNActionPerformed
 
     private void mul_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mul_BTNActionPerformed
         
         Model.Operações_DAO.mult();
+        img1.setVisible(true);
         
     }//GEN-LAST:event_mul_BTNActionPerformed
 
     private void div_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_div_BTNActionPerformed
         
         Model.Operações_DAO.div();
+        img1.setVisible(true);
         
     }//GEN-LAST:event_div_BTNActionPerformed
 
@@ -193,6 +204,7 @@ public class Início_GUI extends javax.swing.JFrame {
 
     private void clr_BTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clr_BTNActionPerformed
         Model.Operações_DAO.clr();
+        img1.setVisible(false);
     }//GEN-LAST:event_clr_BTNActionPerformed
 
     /**
@@ -235,6 +247,7 @@ public class Início_GUI extends javax.swing.JFrame {
     private javax.swing.JPanel calc_Panel;
     public static javax.swing.JButton clr_BTN;
     public static javax.swing.JButton div_BTN;
+    private javax.swing.JLabel img1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
